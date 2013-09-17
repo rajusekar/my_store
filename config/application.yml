@@ -1,0 +1,15 @@
+# config/application.yml
+defaults: &defaults
+  old_db:
+    name: "wall2wall"
+    username: "root"
+    password: "mysql"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
